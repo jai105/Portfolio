@@ -3,6 +3,7 @@ h1 {
     color: #beacac;
 }
 body {
+    margin:0;
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOWqZc-XABoXLAw17vvwAGXzWZo7QsGng6hQ&usqp=CAU);
 background-repeat: no-repeat;
     background-size: 100%;
@@ -13,7 +14,7 @@ background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-content: space-evenly;
+    justify-content: space-evenly;
 
 
 }
@@ -26,4 +27,39 @@ color: lime;
 
 .links{
     color: lime;
+}
+.container{
+    flex-direction: column;
+    display: flex;
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
 }
